@@ -1,2 +1,0 @@
-# Portfolio-Tales
-Portfólio pessoal
