@@ -307,9 +307,26 @@ ul {
   font-size: 20px;
 } */
 
+.initial-page {
+  display: flex;
+}
+
+.social {
+  margin-right: 4%;
+}
+
+.social .social-list {
+  /* display: flex; */
+  gap: 15px;
+  margin-top: 60px;
+  /* font-size: 20px; */
+} 
+
 .social .social-list a i {
   color: var(--skin-color);
   transition: all 0.3s ease;
+  scale: 1.5;
+  margin-bottom: 30px;
 }
 
 .social .social-list a:hover i {
@@ -330,8 +347,9 @@ ul {
 .header .logo {
     top: 50px;
     font-size: 30px;
-    margin-top: 10px;
-    background-color: pink;
+    margin-top: 15px;
+    margin-left: 15px;
+    /* background-color: pink; */
 }
 
 .header .logo a {
@@ -384,7 +402,9 @@ color: var(--skin-color);
 margin-top: 50px;
 /* align-items: center; */
 /* justify-content: center; */
-background-color: red;
+/* background-color: red; */
+margin-left: auto;
+margin-right: 15px;
 }
 
 .header .nav a {
@@ -408,6 +428,8 @@ font-size: 20px;
 }
 
 /* home */
+
+
 
 .home {
   min-height: 100vh;
@@ -450,7 +472,22 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
-.home .home-img {
+.photo {
+  display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo img {
+  width: auto;
+  height: 100%;
+  margin-left: -60px;
+}
+
+/* .home .home-img {
   flex: 0 0 40%;
   max-width: 40%;
   display: flex;
@@ -485,7 +522,7 @@ h3.my-profession {
   margin: auto;
   height: 400px;
   fill: var(--skin-color);
-}
+} */
 
 /* About */
 
@@ -810,6 +847,7 @@ h3.my-profession {
   .section.open {
     left: 270px;
   }
+
 }
 
 @media (max-width: 991px) {
@@ -826,9 +864,13 @@ h3.my-profession {
   .home .home-img {
     display: none;
   }
+
+  .photo {
+    display: none;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 852px) {
   .contact .contact-form .col-6,
   .contact .contact-info {
     flex: 0 0 100%;
@@ -864,4 +906,14 @@ h3.my-profession {
   h3.my-profession span.e-sou {
     display: none;
   }
+
+  .initial-page {
+    display: block;
+  }
+
+  .social-list li {
+    display: inline-block;
+    margin-left: 21.5%;
+  }
+
 }
