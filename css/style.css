@@ -704,7 +704,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item .portfolio-item-inner .portfolio-img img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .portfolio .portfolio-item-inner .portfolio-info {
